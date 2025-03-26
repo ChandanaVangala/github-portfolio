@@ -1,0 +1,397 @@
+body {
+    background-color: #E5CFF7;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #B488CB;
+    padding: 5px 0;
+    position: fixed; /* Fixes the navbar at the top */
+    width: 100%; /* Ensures it spans the entire width */
+    top: 0; /* Sticks it to the top of the page */
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    border-radius: 50%;
+    width: 35px; /* Adjust size as needed */
+    height: 35px; /* Adjust size as needed */
+    margin-left: 1cm;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#about{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.about-container {
+    display: flex;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+
+.about-photo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px; /* Adjust size */
+    margin-bottom: 20px;
+    margin: auto;
+
+}
+
+.circle {
+    position: absolute;
+    width: 180px; /* Adjust size for circles */
+    height: 180px;
+    background-color: #B488CB; /* Purple shade */
+    border-radius: 50%;
+    z-index: -1; /* Keep behind the image */
+}
+
+.circle1 {
+    left: 10px;
+    top: 200px;
+}
+
+.circle2 {
+    right: 80px;
+    top: 250px;
+}
+
+.about-photo img {
+    width: 100%;
+    position: relative;
+    z-index: 1; /* Ensure the image is on top */
+}
+
+
+.social-container{
+    background-color: white;
+    border-radius: 10px;
+}
+
+.about-photo {
+    flex: 0 0 40%;
+}
+
+.about-photo img {
+    width: 70%;
+    border-radius: 10px; /* Optional: for rounded corners */
+}
+
+.about-info {
+    margin-top: 50px;
+    flex: 0 0 60%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px; /* Optional: for rounded corners */
+}
+
+
+/* Container for social icons with a white background */
+.social-icons {
+    display: flex;
+    margin-top: 20px;
+    padding: 10px;
+    justify-content: space-evenly;
+    
+}
+
+.about-photo img:hover{
+    transform: scale(1.1);
+}
+
+.social-icons img {
+    width: 30px; /* Adjust size as needed */
+    height: 30px;
+    border-radius: 80px; /* Adjust size as needed */
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+
+footer {
+    background-color: #B488CB;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#education {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.education-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.education-item {
+    display: flex;
+    background-color: white;
+    margin-bottom: 15px; /* Space between divisions */
+    padding: 10px;
+    border-radius: 10px; /* Optional: for rounded corners */
+}
+
+.education-image {
+    flex: 0 0 30%;
+}
+
+.education-image img {
+    width: 100%;
+    border-radius: 10px; /* Optional: for rounded corners */
+}
+
+.education-info {
+    flex: 0 0 70%;
+    padding-left: 15px; /* Space between image and text */
+}
+
+.education-info h3 {
+    color: black;
+}
+
+.education-info p {
+    color: black;
+    margin: 5px 0; /* Space between paragraphs */
+    padding: 5px;
+}
+
+
+.edu {
+    display: inline-block; /* Changed from 'auto' to 'inline-block' */
+    padding: 10px 15px; /* Add padding for aesthetic spacing */
+    background-color: white; /* Background color */
+    color: #8d52ad; /* Text color *//* Rounded corners */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    text-align: center; /* Center the text */
+    margin: 0 auto; /* Center align the heading in its container */
+}
+
+.edu2{
+    background-color: white;
+    color: #8d52ad;
+    display: inline-block; /* Changed from 'auto' to 'inline-block' */
+    padding: 10px 20px; /* Add padding for aesthetic spacing */
+    background-color: white; /* Background color */
+    color: #8d52ad; /* Text color *//* Rounded corners */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    text-align: center; /* Center the text */
+    margin-top: 20px;
+    margin-bottom: 0px;
+     
+}
+
+
+#skille_title{
+    color: #8d52ad;
+}
+
+#skills-projects {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.skills-projects-heading {
+    display:auto;
+    padding: 5px;
+    background-color: white;
+    color:#8d52ad;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white; /* White background for the entire section */
+    padding: 20px;
+    padding-bottom: 0px;
+    border-radius: 10px; /* Optional: for rounded corners */
+}
+
+.skills-images {
+    display: flex;
+    justify-content: space-between; /* Space between items */
+    flex-wrap: nowrap; /* Prevent wrapping to the next line */
+    margin-bottom: 20px; /* Space below the images section */
+}
+
+.skill-item {
+    flex: 0 0 10%; /* Adjust width to fit 9 items in a single line */
+    text-align: center; /* Center the text below the images */
+}
+
+.skill-item img {
+    width: 100%; /* Make images responsive */
+    border-radius: 10px; /* Optional: for rounded corners */
+}
+
+.projects-info {
+    max-width: 900px;
+    background-color: white; /* White background for the projects section */
+    padding: 20px; /* Padding inside the projects section */
+    border-radius: 10px; /* Optional: for rounded corners */
+    margin-top: 0px; /* Add space above the projects section */
+}
+
+.projects-info h3 {
+    color: #B488CB; /* Text color for project titles */
+}
+
+.projects-info ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.projects-info li {
+    color: black; /* Text color for project list */
+    margin: 5px 0; /* Space between project titles */
+}
+
+#experience {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.experience-heading {
+    background-color: white; /* White background for the heading */
+    color: #8d52ad; /* Text color for the heading */
+    padding: 10px; /* Padding around the heading */
+    border-radius: 10px; /* Optional: for rounded corners */
+    text-align: center; /* Center the heading text */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.experience-item {
+    display: flex;
+    background-color: white; /* White background for the first division */
+    padding: 20px; /* Padding inside the division */
+    border-radius: 10px; /* Optional: for rounded corners */
+    margin-bottom: 20px; /* Space below the first division */
+}
+
+.experience-image {
+    flex: 0 0 30%; /* Adjust width as needed */
+}
+
+.experience-image img {
+    width: 100%; /* Make images responsive */
+    border-radius: 10px; /* Optional: for rounded corners */
+}
+
+.experience-info {
+    flex: 0 0 70%; /* Adjust width as needed */
+    padding-left: 15px; /* Space between image and text */
+}
+
+.experience-info h3 {
+    color: #8d52ad; /* Text color for job titles */
+}
+
+.experience-text-only {
+    background-color: white; /* White background for the text-only division */
+    padding: 10px; /* Padding inside the text-only division */
+    border-radius: 10px; /* Optional: for rounded corners */
+    margin-bottom: 90px;
+    
+}
+
+.edu1{
+    background-color: white;
+    color: #8d52ad;
+    display: inline-block; /* Changed from 'auto' to 'inline-block' */
+    padding: 10px 20px; /* Add padding for aesthetic spacing */
+    background-color: white; /* Background color */
+    color: #8d52ad; /* Text color *//* Rounded corners */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    text-align: center; /* Center the text */
+    margin-top: 200px;
+    margin: -17px 127px; 
+    
+}
+
+
+.hobbies-container {
+    max-width: 1000px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;  
+    margin: 20px auto;             /* Use flexbox to align items */
+    justify-content: center;     /* Center items horizontally */
+    flex-wrap: wrap;  
+    margin-top: 12px; 
+    margin-bottom: 40px;         /* Allow wrapping for smaller screens */
+    gap: 15px;                  /* Space between items */
+}
+
+.hobby-item {
+    margin: 10px 10px;
+    border: 2px solid #8d52ad; /* Example color: bright orange */
+    border-radius: 8px; /* Optional: to round the edges */
+    padding: 5px;
+    padding-top: 15px;
+    flex: 1 1 auto;             /* Allow flexible sizing */
+    width: 150px;               /* Set a specific width for items */
+}
+
+.hobbies{
+    margin-top: 90px;
+}
+
+.hobby-item img {
+    max-width: 100%;            /* Ensure that images are responsive */
+    height: auto;               /* Maintain aspect ratio */
+}
+
+.img_txt{
+    color: #8d52ad;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
